@@ -48,6 +48,11 @@ Depending on your preference, you can either check your progress by:
   the frontend
 - Running the Rails server and using Postman to make requests
 
+
+<!-- Create everything through resource.
+ex: rails g resource camper name age:integer 
+ex join table: rails g resource signup activity:belongs_to camper:belongs_to time:integer
+-->
 ## Models
 
 You need to create the following relationships:
@@ -75,7 +80,7 @@ $ rails db:migrate db:seed
 > generate your own seed data to test the application.
 
 ## Validations
-
+<!-- Validations are made within models -->
 Add validations to the `Camper` model:
 
 - must have a `name`
